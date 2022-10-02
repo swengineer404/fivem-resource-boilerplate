@@ -18,7 +18,7 @@
       {
          "match": "src\\\\js\\\\.+",
          "isAsync": false,
-         "cmd": "uglifyjs-folder ${workspaceRoot}/src/js -o ${workspaceRoot}/app.min.js",
+         "cmd": "uglifyjs-folder ${workspaceRoot}/src/js -o ${workspaceRoot}/html/app.min.js",
          "event": "onFileChange"
       }
    ],
