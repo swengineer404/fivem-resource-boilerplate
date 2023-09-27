@@ -1,0 +1,25 @@
+{
+   "liveServer.settings.ignoreFiles": [
+      ".vscode/**",
+      "**/*.scss",
+      "**/*.sass"
+   ],
+   "css.styleSheets": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",
+      "/html/css/app.min.css"
+   ],
+   "filewatcher.commands": [
+      {
+         "match": "src\\\\scss\\\\.+",
+         "isAsync": false,
+         "cmd": "sass \"${workspaceRoot}/src/scss/app.scss:${workspaceRoot}/html/app.min.css\" --style compressed --no-source-map",
+         "event": "onFileChange"
+      },
+      {
+         "match": "src\\\\js\\\\.+",
+         "isAsync": false,
+         "cmd": "uglifyjs-folder \"${workspaceRoot}/src/js\" -o \"${workspaceRoot}/html/app.min.js\"",
+         "event": "onFileChange"
+      }
+   ]
+}
