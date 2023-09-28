@@ -11,11 +11,11 @@ server_scripts {
 }
 
 shared_scripts {
-    "shared/**",
     "@px-core/shared/lib/state.lua",
     "@px-core/shared/lib/utils.lua",
     "@px-core/shared/lib/cache.lua",
-    "@px-core/shared/lib/log.lua"
+    "@px-core/shared/lib/log.lua",
+    "shared/**"
 }
 
 ui_page "html/main.html"
